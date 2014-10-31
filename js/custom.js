@@ -10,7 +10,6 @@ $('.nav>li').click(function(){
 	$('.rotation').animate({
 		'margin-left' : left,
 		'margin-right' : -50-left
-	
 	},
 	{
 		duration: Math.abs(theta)*3
