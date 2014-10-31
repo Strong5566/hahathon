@@ -1,0 +1,243 @@
+html, body{
+	font-family: "微軟正黑體";
+}
+.navbar{
+	background: url(../img/banner-08.png) no-repeat center center scroll;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+	/*background: #2EA8CC;*/
+	font-family:"impact","微軟正黑體";
+	line-height: 0;
+}
+.navbar-header{
+	float: right;
+	padding: 0;
+	line-height: 0;
+	margin: 0;
+	position: relative;
+	
+}
+.navbar-brand{
+	text-align: right;
+	font-size: 200%;
+	color: white;
+	padding-bottom: 0;
+	margin:0;
+	line-height: 0;
+	position: relative;
+	margin-bottom: -20px;
+}
+.navbar-nav{
+	margin-top: 36px;
+	padding-left: 20px;
+}
+.navbar-nav > li > a, .dropdown-menu > li > a{
+	color: #2EA8CC;
+	/*color: blue;*/
+	font-size: 110%;
+}
+
+ .navbar-nav > li > a:hover,  .navbar-nav > li > a:focus  {
+	background-color:rgba(0,0,0,0);
+	color:#66CCFF;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-menu>.active>a:hover,
+.dropdown-menu>.active>a:focus{
+  background-color:rgba(123,206,255,0.2);
+  color:#2EA8CC;
+}
+.dropdown-menu>.active>a
+{
+  background-color:transparent;
+  color:#2EA8CC;
+}
+
+.navbar-nav > li.dropdown.active.open > a, 
+.navbar-nav > li.dropdown.open > a {
+  border-radius: 5px;
+  background-color:rgba(224,238,255,0.4);
+  color:#66CCFF;
+}
+.navbar-nav .open .dropdown-menu{
+}
+.navbar-nav .open .dropdown-menu.active > li {
+    /*background-color: rgba(84,154,218,0.3);*/
+	/*background-color: rgba(123,206,255,0.3);*/
+}
+#intro-div{
+	height: 90%;
+	width: 100%;
+	margin:0;
+	margin-top: auto;
+	margin-bottom: auto;
+	position: relative;
+	background-color:#2B2B2B;
+	color: #fff;
+	font-size: 15px;
+}
+#intro-left{
+	text-align: right;
+	height: 100%;
+	padding-top: 15%;
+}
+#intro-right{
+	height: 100%;
+	padding-top: 20%;
+}
+.brand-font{
+	font-size: 40px;
+	font-family: "impact", "微軟正黑體";
+}
+.meichu-font{
+	font-size: 35px;
+	color: #2EA8CC;
+	font-weight: bold;
+}
+#sign-btn{
+	padding: 10px;
+	border: 1px solid #2EA8CC;
+	color: #2EA8CC;
+	width: 100px;
+}
+#sign-btn:hover{
+	border: 1px solid #66CCFF;
+	color:#66CCFF;
+	cursor: pointer;
+}
+#intro-2{
+	padding: 0;
+	margin: 0px, auto;
+	line-height: 100%;
+	text-align: center;
+	font-size: 25px;
+	height: 100%;
+}
+#logo-container{
+	position: relative
+	height: 100%;
+
+	display: inline-block;
+	/*background: yellow;*/
+	float: left;
+	margin:0 ;
+	margin-left: 100px;
+	
+}
+#logo-blue{
+	width: 120%;
+
+}
+#intro-words{
+	margin:0;
+	margin-left: -40px;
+	text-align: left;
+	display: inline-block;
+	padding: auto 0;
+	/*background: yellow;*/
+}
+#line{
+	width: 95%;
+	float: left;
+}
+#team-content{
+	padding-top: 15%;
+	padding-bottom: 10%;
+	font-size: 20px;
+	text-align: left;
+}
+.section-title{
+	background-color: rgba(0,0,0,0.7);
+	/*margin-left: -20px;*/
+	padding: 15px;
+	padding-left: 8%;
+	width: 100%;
+}
+.section-container{
+	/*text-align: center;*/
+	font-size: 20px;
+	padding-left: 8%;
+	margin-bottom:0;
+	height: 75%;
+	background-color:rgba(0,0,0,0.45);
+	position: relative;
+}
+.blue-words{
+	color:#66CCFF;
+	font-weight: bold;
+}
+#link_2013{
+	color:#66CCFF;
+	font-weight: bold;
+	font-size: 130%;
+}
+#link_2013:hover{
+	color:#adedff;
+}
+#logo-key{
+	position: relative;
+	width: 100%;
+}
+#contact-btn{
+	color:#66CCFF;
+	font-size: 20px;
+}
+#contact-btn:hover{
+	color:#adedff;
+}
+
+.title{
+	line-height: 130px;
+	font-size: 30px;
+	text-align: left;
+	padding-left: 150px;
+	position: relative;
+}
+.partners-section .title{
+	color: white;
+	background: url(../img/line-partners.jpg) no-repeat center center scroll;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+	
+}
+.sponsors-section .title{
+	color: white;
+	background: url(../img/line-sponsors.jpg) no-repeat center center scroll;
+	-webkit-background-size: cover;
+    -moz-background-size: 100% 100%;
+    background-size: cover;
+    -o-background-size: cover;
+	
+}
+.join-section .title{
+	color: white;
+	background: url(../img/line-join.jpg) no-repeat center center scroll;
+	-webkit-background-size: cover;
+    -moz-background-size: 100% 100%;
+    background-size: cover;
+    -o-background-size: cover;
+	
+}
+.team-section .title{
+	color: white;
+	background: url(../img/line-team.jpg) no-repeat center center scroll;
+	-webkit-background-size: cover;
+    -moz-background-size: 100% 100%;
+    background-size: cover;
+    -o-background-size: cover;
+	
+}
+.page{
+	margin:0;
+	padding:0;
+	height: 100%;
+	-webkit-background-size: cover;
+    -moz-background-size: 100% 100%;
+    background-size: cover;
+    -o-background-size: cover;
+}
