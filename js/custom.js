@@ -48,6 +48,62 @@ $('#intro2').waypoint(function(direction) {
     rollTo($('#li_page-top'));
 }) ;
 
+$(function() {
+		
+    $('#prev').bind('click', function(event) {
+		var tops = [];
+		
+		tops.push($('#intro').offset().top);
+		tops.push($('#intro2').offset().top);
+		tops.push($('#about').offset().top);
+		tops.push($('#special').offset().top);
+		tops.push($('#join').offset().top);
+		tops.push($('#QA').offset().top);
+		tops.push($('#partners').offset().top);
+		tops.push($('#sponsors').offset().top);
+		tops.push($('#team').offset().top);
+		tops.push($('#contact').offset().top);
+		tops.push(document.body.scrollHeight);
+		var i;
+		var now = $(this).offset().top;
+		for(i = tops.length-1; i>=1; i--){
+			if(tops[i-1]<now && now<tops[i] && i>=2){
+				 $('html, body').stop().animate({
+						scrollTop: tops[i-2]
+					}, 1500, 'easeInOutExpo');
+				event.preventDefault();
+				break;
+			}
+		}
+    });
+    $('#next').bind('click', function(event) {
+		var tops = [];
+		
+		tops.push($('#intro').offset().top);
+		tops.push($('#intro2').offset().top);
+		tops.push($('#about').offset().top);
+		tops.push($('#special').offset().top);
+		tops.push($('#join').offset().top);
+		tops.push($('#QA').offset().top);
+		tops.push($('#partners').offset().top);
+		tops.push($('#sponsors').offset().top);
+		tops.push($('#team').offset().top);
+		tops.push($('#contact').offset().top);
+		tops.push(document.body.scrollHeight);
+		var i;
+		var now = $(this).offset().top;
+		for(i = 1; i<tops.length; i++){
+			if(now>=tops[i-1] && now<tops[i]){
+				 $('html, body').stop().animate({
+						scrollTop: tops[i]
+					}, 1500, 'easeInOutExpo');
+				event.preventDefault();
+				break;
+			}
+		}
+    });
+});
+
 /*$('.dropdown').hover(function(){ 
   $('.dropdown-toggle', this).trigger('click'); 
 });*/

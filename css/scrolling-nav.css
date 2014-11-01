@@ -112,28 +112,33 @@ of those sections to manage the look and feel of the site. */
 
 .join-section {
 	height: 100%;
-    overflow: hidden;
+	overflow: auto;
+	overflow-x: hidden;
+	-ms-overflow-x: hidden;
     padding-top: 50px;
-    text-align: center;
+    text-align: left;
 	background-color:black;
 	background: url(../img/bg-05-join.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+	color:#fff;
 }
 .QA-section {
 	height: 100%;
-	overflow: hidden;
-	/*min-height: 100% !important;*/
-    padding-top: 50px;
-    text-align: center;
-	background-color:black;
+	overflow: scroll;
+	overflow-x: hidden;
+	-ms-overflow-x: hidden;
+    padding-top: 40px;
+	position: relative;
 	background: url(../img/bg-05-join.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+	color: #fff;
+	text-align: left;
 }
 
 .team-section {
