@@ -4,8 +4,9 @@ $('#sign-btn').click(function(){
 	alert("抱歉，11/7才開放報名唷~");
 });
 
-$('.nav>li').click(function(){
-	var left = $(this).position().left + $(this).width()/2 - 51
+function rollTo(btn){
+    $('.rotation').stop();
+	var left = $(btn).position().left + $(btn).width()/2 - 51
 	var theta = left - parseInt($('.rotation').css('margin-left'))
 	$('.rotation').animate({
 		'margin-left' : left,
@@ -15,8 +16,9 @@ $('.nav>li').click(function(){
 		duration: Math.abs(theta)*3
 	});
 	$('.rotation').animateRotate(theta, Math.abs(theta)*3);
-});
+}
 
+var skipWaypoint=false;
 $.fn.animateRotate = function(angle, duration, easing, complete) {
   var args = $.speed(duration, easing, complete);
   var step = args.step;
@@ -31,6 +33,20 @@ $.fn.animateRotate = function(angle, duration, easing, complete) {
   });
 };
 
+var buttons = ['about', 'join', 'QA', 'partners', 'team', 'contact'];
+$.each(buttons, function(i, b){
+    $('#'+b).waypoint(function(direction) {
+        if(skipWaypoint) return;
+        rollTo($('#li_'+b));
+		
+	}) ;
+});
+
+$('#intro2').waypoint(function(direction) {
+    if(skipWaypoint) return;
+    console.log(direction)
+    rollTo($('#li_page-top'));
+}) ;
 
 /*$('.dropdown').hover(function(){ 
   $('.dropdown-toggle', this).trigger('click'); 

@@ -17,7 +17,6 @@
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
-	<link href="css/rotation.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -52,36 +51,36 @@
                     <li>
 						<img src="img/gear.png" class="rotation" />
 					</li>
-					<li>
-                        <a class="page-scroll" href="#page-top">&#8593;TOP</a>
+					<li id="li_page-top">
+                        <a class="page-scroll" href="#page-top" gear-target="#li_page-top">&#8593;TOP</a>
                     </li>
 					
-					 <li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Introduction <span class="caret"></span></a>
+					 <li class="dropdown" id="li_about">
+						<a href="javascript:void(null)" class="dropdown-toggle">Introduction <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
-						  <li><a class="page-scroll" href="#about">What's Hackathon?</a></li>
-						  <li><a class="page-scroll" href="#special">What's Special?</a></li>
+						  <li><a class="page-scroll" href="#about" gear-target="#li_about">What's Hackathon?</a></li>
+						  <li><a class="page-scroll" href="#special" gear-target="#li_about">What's Special?</a></li>
 						</ul>
 					 </li>
-					<li>
-                        <a class="page-scroll" href="#join">JOIN US</a>
+					<li id="li_join">
+                        <a class="page-scroll" href="#join" gear-target="#li_join">JOIN US</a>
                     </li>
-					<li>
-                        <a class="page-scroll" href="#QA">Q&A</a>
+					<li id="li_QA">
+                        <a class="page-scroll" href="#QA" gear-target="#li_QA">Q&A</a>
                     </li>
-					 <li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">PARTNERS <span class="caret"></span></a>
+					 <li class="dropdown" id="li_partners">
+						<a href="javascript:void(null)" class="dropdown-toggle">PARTNERS <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
-						  <li><a class="page-scroll" href="#partners">Partners</a></li>
-						  <li><a class="page-scroll" href="#sponsors">Sponsors</a></li>
+						  <li><a class="page-scroll" href="#partners" gear-target="#li_partners">Partners</a></li>
+						  <li><a class="page-scroll" href="#sponsors" gear-target="#li_partners">Sponsors</a></li>
 						</ul>
 					 </li>
 					
-					<li>
-                        <a class="page-scroll" href="#team">OUR TEAM</a>
+					<li id="li_team">
+                        <a class="page-scroll" href="#team" gear-target="#li_team">OUR TEAM</a>
                     </li>
-					<li>
-                        <a class="page-scroll" href="#contact">CONTACT</a>
+					<li id="li_contact">
+                        <a class="page-scroll" href="#contact" gear-target="#li_contact">CONTACT</a>
                     </li>
                 </ul>
             </div>
@@ -262,6 +261,7 @@
 
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
 	<script src="js/custom.js"></script>
 

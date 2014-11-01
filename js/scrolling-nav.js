@@ -23,10 +23,14 @@ $(window).scroll(function() {
 //jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
+        rollTo($(this).attr("gear-target"));
         var $anchor = $(this);
+        skipWaypoint=true;
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
+        }, 1500, 'easeInOutExpo', function(){
+            skipWaypoint=false;
+        });
         event.preventDefault();
     });
 });

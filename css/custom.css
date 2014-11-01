@@ -1,6 +1,14 @@
 html, body{
 	font-family: "微軟正黑體";
 }
+
+.rotation {
+	margin-top: -30px;
+	margin-right: -50px;
+    width: 50px;
+    height: 50px;
+}
+
 .navbar{
 	background: url(../img/banner-08.png) no-repeat center center scroll;
 	-webkit-background-size: cover;
@@ -50,6 +58,11 @@ html, body{
   background-color:rgba(123,206,255,0.2);
   color:#2EA8CC;
 }
+
+.dropdown-menu{
+	margin-top:-15px !important;
+}
+
 .dropdown-menu>.active>a
 {
   background-color:transparent;
@@ -62,12 +75,19 @@ html, body{
   background-color:rgba(224,238,255,0.4);
   color:#66CCFF;
 }
+
 .navbar-nav .open .dropdown-menu{
 }
+
 .navbar-nav .open .dropdown-menu.active > li {
     /*background-color: rgba(84,154,218,0.3);*/
 	/*background-color: rgba(123,206,255,0.3);*/
 }
+
+ul.nav li.dropdown:hover ul.dropdown-menu{ 
+	display: block; 
+}
+
 #intro-div{
 	height: 90%;
 	width: 100%;
@@ -79,6 +99,7 @@ html, body{
 	color: #fff;
 	font-size: 15px;
 }
+
 #intro-left{
 	text-align: right;
 	height: 100%;
