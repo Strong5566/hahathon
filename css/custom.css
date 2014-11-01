@@ -182,7 +182,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
 	/*text-align: center;*/
 	font-size: 20px;
 	padding-left: 8%;
-	margin-bottom:0;
+	padding-bottom: 50px;
 	height: 75%;
 	background-color:rgba(0,0,0,0.45);
 	position: relative;
@@ -191,6 +191,12 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
 	color:#66CCFF;
 	font-weight: bold;
 }
+
+.partners-section img, .sponsors-section img {
+    height: 80px;
+    margin: 10px;
+}
+
 #link_2013{
 	color:#66CCFF;
 	font-weight: bold;
@@ -216,6 +222,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
 	font-size: 30px;
 	text-align: left;
 	padding-left: 150px;
+	margin-bottom: 30px;
 	position: relative;
 }
 .partners-section .title{
