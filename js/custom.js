@@ -36,73 +36,50 @@ $.fn.animateRotate = function(angle, duration, easing, complete) {
 var buttons = ['about', 'join', 'QA', 'partners', 'team', 'contact'];
 $.each(buttons, function(i, b){
     $('#'+b).waypoint(function(direction) {
+		
         if(skipWaypoint) return;
         rollTo($('#li_'+b));
 		
 	}) ;
 });
 
-$('#intro2').waypoint(function(direction) {
-    if(skipWaypoint) return;
-    console.log(direction)
-    rollTo($('#li_page-top'));
-}) ;
+$('#about').waypoint(function(direction) {
+	$('#bg2').animate({
+		opacity:1
+	});
+	$('#bg3').animate({
+		opacity:0
+	});
+},
+{ offset: 'bottom-in-view' }) ;
 
-$(function() {
-		
-    $('#prev').bind('click', function(event) {
-		var tops = [];
-		
-		tops.push($('#intro').offset().top);
-		tops.push($('#intro2').offset().top);
-		tops.push($('#about').offset().top);
-		tops.push($('#special').offset().top);
-		tops.push($('#join').offset().top);
-		tops.push($('#QA').offset().top);
-		tops.push($('#partners').offset().top);
-		tops.push($('#sponsors').offset().top);
-		tops.push($('#team').offset().top);
-		tops.push($('#contact').offset().top);
-		tops.push(document.body.scrollHeight);
-		var i;
-		var now = $(this).offset().top;
-		for(i = tops.length-1; i>=1; i--){
-			if(tops[i-1]<now && now<tops[i] && i>=2){
-				 $('html, body').stop().animate({
-						scrollTop: tops[i-2]
-					}, 1500, 'easeInOutExpo');
-				event.preventDefault();
-				break;
-			}
-		}
-    });
-    $('#next').bind('click', function(event) {
-		var tops = [];
-		
-		tops.push($('#intro').offset().top);
-		tops.push($('#intro2').offset().top);
-		tops.push($('#about').offset().top);
-		tops.push($('#special').offset().top);
-		tops.push($('#join').offset().top);
-		tops.push($('#QA').offset().top);
-		tops.push($('#partners').offset().top);
-		tops.push($('#sponsors').offset().top);
-		tops.push($('#team').offset().top);
-		tops.push($('#contact').offset().top);
-		tops.push(document.body.scrollHeight);
-		var i;
-		var now = $(this).offset().top;
-		for(i = 1; i<tops.length; i++){
-			if(now>=tops[i-1] && now<tops[i]){
-				 $('html, body').stop().animate({
-						scrollTop: tops[i]
-					}, 1500, 'easeInOutExpo');
-				event.preventDefault();
-				break;
-			}
-		}
-    });
-});
+$('#special').waypoint(function(direction) {
+	$('#bg2').animate({
+		opacity:1
+	});
+	$('#bg3').animate({
+		opacity:0
+	});
+},
+{ offset: 'bottom-in-view' }) ;
+
+
+$('#join').waypoint(function(direction) {
+	$('#bg2').animate({
+		opacity:0
+	});
+	$('#bg3').animate({
+		opacity:1
+	});	
+},
+{ offset: 'bottom-in-view' }) ;
+
+ $('#intro2').waypoint(function(direction) {
+
+     if(skipWaypoint) return;
+     console.log(direction)
+     rollTo($('#li_page-top'));
+ }) ;
 
 /*$('.dropdown').hover(function(){ 
   $('.dropdown-toggle', this).trigger('click'); 
