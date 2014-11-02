@@ -183,7 +183,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
 	font-size: 20px;
 	padding-left: 8%;
 	padding-bottom: 50px;
-	height: 75%;
+	height: 100%;
 	background-color:rgba(0,0,0,0.45);
 	position: relative;
 }
@@ -192,8 +192,14 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
 	font-weight: bold;
 }
 
+.join-section img{
+    height: 600px;
+    margin: 10px;
+	vertical-align : middle;
+}
+
 .partners-section img, .sponsors-section img {
-    height: 80px;
+    width: 200px;
     margin: 10px;
 }
 
@@ -273,8 +279,11 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
 
 .fading_background{
 	position:fixed;
-	top:0;
+	top:0px;
 	left:0;
 	z-index:-1;
 	opacity:0;
+	width: 100%;
+	margin:0px auto;
 }
+

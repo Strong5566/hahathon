@@ -43,21 +43,18 @@ $.each(buttons, function(i, b){
 	}) ;
 });
 
-$('#about').waypoint(function(direction) {
+
+$('#benefit').waypoint(function(direction) {
 	$('#bg2').animate({
 		opacity:1
 	});
 	$('#bg3').animate({
 		opacity:0
 	});
-},
-{ offset: 'bottom-in-view' }) ;
-
-$('#special').waypoint(function(direction) {
-	$('#bg2').animate({
-		opacity:1
+	$('#bg1').animate({
+		opacity:0
 	});
-	$('#bg3').animate({
+	$('#bg4').animate({
 		opacity:0
 	});
 },
@@ -69,10 +66,46 @@ $('#join').waypoint(function(direction) {
 		opacity:0
 	});
 	$('#bg3').animate({
+		opacity:0
+	});	
+	$('#bg1').animate({
+		opacity:0
+	});
+	$('#bg4').animate({
 		opacity:1
 	});	
 },
 { offset: 'bottom-in-view' }) ;
+
+$('#time').waypoint(function(direction) {
+	$('#bg2').animate({
+		opacity:0
+	});
+	$('#bg3').animate({
+		opacity:0
+	});
+	$('#bg1').animate({
+		opacity:1
+	});
+	$('#bg4').animate({
+		opacity:0
+	});	
+}) ;
+
+$('#QA').waypoint(function(direction) {
+	$('#bg2').animate({
+		opacity:0
+	});
+	$('#bg3').animate({
+		opacity:1
+	});
+	$('#bg1').animate({
+		opacity:0
+	});
+	$('#bg4').animate({
+		opacity:0
+	});		
+}) ;
 
  $('#intro2').waypoint(function(direction) {
 

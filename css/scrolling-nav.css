@@ -83,7 +83,7 @@ of those sections to manage the look and feel of the site. */
 	color: #fff;
     
 	/*background: url(../img/bg-02-1-special.jpg) no-repeat center center scroll;*/
-	/*background-color: #fff;*/
+	/*background-color: #fff;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -92,7 +92,6 @@ of those sections to manage the look and feel of the site. */
 }
 
 .partners-section {
-	height: 100%;
 	overflow: hidden;
     padding-top: 30px;
     text-align: center;
@@ -111,6 +110,7 @@ of those sections to manage the look and feel of the site. */
 	-ms-overflow-x: hidden;
     padding-top: 50px;
     text-align: left;
+	font-size: 18px;
 	/*background-color:black;*/
 	/*background: url(../img/bg-05-join.jpg) no-repeat center center scroll;*/
     -webkit-background-size: cover;
