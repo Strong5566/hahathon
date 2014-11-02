@@ -90,7 +90,8 @@ $('#time').waypoint(function(direction) {
 	$('#bg4').animate({
 		opacity:0
 	});	
-}) ;
+},
+{ offset: 'bottom-in-view' }) ;
 
 $('#QA').waypoint(function(direction) {
 	$('#bg2').animate({
