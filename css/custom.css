@@ -1,5 +1,4 @@
 html, body{
-	font-family: "微軟正黑體";
 	background-color:#2B2B2B;
 }
 
@@ -17,8 +16,8 @@ html, body{
     background-size: cover;
     -o-background-size: cover;
 	/*background: #2EA8CC;*/
-	font-family:"impact","微軟正黑體";
 	line-height: 0;
+	font-family: "impact";
 }
 .navbar-header{
 	float: right;
@@ -111,7 +110,6 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
 }
 .brand-font{
 	font-size: 40px;
-	font-family: "impact", "微軟正黑體";
 }
 .meichu-font{
 	font-size: 35px;
