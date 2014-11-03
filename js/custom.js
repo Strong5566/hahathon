@@ -88,8 +88,7 @@ $('#join').waypoint(function(direction) {
 	$('#bg4').animate({
 		opacity:1
 	});	
-},
-{ offset: 'bottom-in-view' }) ;
+}) ;
 
 $('#time').waypoint(function(direction) {
 	$('#bg2').animate({
