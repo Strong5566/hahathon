@@ -43,6 +43,20 @@ $.each(buttons, function(i, b){
 	}) ;
 });
 
+$('#about').waypoint(function(direction) {
+	$('#bg2').animate({
+		opacity:1
+	});
+	$('#bg3').animate({
+		opacity:0
+	});
+	$('#bg1').animate({
+		opacity:0
+	});
+	$('#bg4').animate({
+		opacity:0
+	});
+}) ;
 
 $('#benefit').waypoint(function(direction) {
 	$('#bg2').animate({

@@ -90,7 +90,6 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
 }
 
 #intro-div{
-	height: 90%;
 	width: 100%;
 	margin:0;
 	margin-top: auto;
@@ -193,7 +192,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
 }
 
 .join-section img{
-    height: 600px;
+    max-width: 100%;
     margin: 10px;
 	vertical-align : middle;
 }
